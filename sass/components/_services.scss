@@ -1,7 +1,5 @@
 .services {
     padding-bottom: 30px;
-    background: $background2;
-    text-align: center;
     padding-top: 20px;
 }
 .services__title {
@@ -27,24 +25,51 @@
 .services__items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 0px 20px;
+    //margin: 0px 20px;
     grid-gap: 20px;
 }
 .services__item {
-    background: #040402;
+    background: $background-icon;
     padding: 20px;
+    border-bottom: 4px solid $background-icon;
+    transition: all .3s ease;
+    filter: grayscale(1);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        .fa-mobile-alt{
+            transition: all .3s ease;
+            color: $purple;
+        }
+        border-bottom: 4px solid $purple;
+        filter: grayscale(0);
+
+    }
+}
+.service__item-icon{
+    font-size: 4em;
+    background: $background-icon;
+
 }
 .fa-mobile-alt{
     color: $txt;
     font-size: 2.5em;
 }
 .item__title{
-    margin-top: 24px;
+    margin-top: 10px;
     color: $white;
     font-size: 1.3em;
+    background: $background-icon;
 }
 .item__txt{
     margin-top: 24px;
     color: $txt;
     font-size: 1.2em;
+    background: $background-icon;
+    text-align: center;
+
 }

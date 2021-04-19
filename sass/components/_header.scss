@@ -1,6 +1,5 @@
 
 .header {
-    background: $background1;
     color: $purple;
 }
 .header__container{
@@ -16,4 +15,5 @@
     padding: 7px;
     color: $white;
     background: $purple;
+    cursor: pointer;
 }

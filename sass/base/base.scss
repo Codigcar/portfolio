@@ -6,7 +6,23 @@ $white: #fff;
 $txt: #AFAFAF;
 $background3: #131617;
 $background-icon: #191919;
+$background-primary: #040402;
 *{
     margin: 0px;
     padding: 0px;
+    background: $background-primary;
+
 }
+p {
+    font-family: 'Jost', sans-serif;
+}
+main{
+    padding: 0px 20px;
+}
+/*
+angular
+vue
+.netcore
+springboot
+mysql
+*/

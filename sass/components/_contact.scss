@@ -1,0 +1,71 @@
+.contact{
+    color: $txt;
+    margin-top: 50px;
+}
+.contact__title {
+    text-align: center;
+    color: $white;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 200px;
+        background: $purple;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.contact__txt {
+    margin: 60px 0px;
+    text-align: center;
+    font-size: 1.4em;
+}
+.contact__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 17px;
+}
+.contact__item {
+    text-align: center;
+    color: $txt;
+    background: $background-icon;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    &:hover{
+        color: $white;
+    }
+}
+.contact__item-description{
+    background: $background-icon;
+}
+.fa-linkedin-in{
+    font-size: 3.6em;
+}
+.fa-phone-alt{
+    font-size: 3em;    
+    background: $background-icon;
+}
+.fa-github{
+    font-size: 3.6em;
+}
+.fa-paper-plane{
+    font-size: 3em;
+    background: $background-icon;
+}
+.fa-whatsapp{
+    font-size: 3.6em;
+}
+.fa-instagram{
+    font-size: 3.6em;
+}
+.contact__item-description{
+    font-size: 1em;
+}

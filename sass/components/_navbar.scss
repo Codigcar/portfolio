@@ -1,3 +1,32 @@
 .navbar__list {
-    display: none;
+    //display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+
+}
+.navbar__list-item{
+    padding: 13px 0px;
+    background: $background-primary;
+
+}
+.navbar__list-item-link{
+    text-decoration: none;
+    color: $white;
+    background: $background-primary;
+    font-size: 1.3em;
+    transition: all .3s ease;
+    &:hover{
+        color: $purple;
+    }
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+
 }

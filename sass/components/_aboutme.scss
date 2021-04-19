@@ -1,6 +1,5 @@
 .aboutme{
-    background: $background1;
-    padding: 20px;
+    //padding: 20px;
 }
 
 .aboutme__img{
@@ -36,6 +35,10 @@
     padding: 20px 0px;
     font-size: 2.5em;
 }
+.aboutme__description{
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2em;
+}
 .aboutme__btn{
     width: 120px;
     margin: 30px 0px;
@@ -46,22 +49,56 @@
 .aboutme__skills{
     color: $txt;
 }
-.skills-items{
-    display: grid;
+.skills-items{    display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,111px);
+    grid-template-rows: repeat(4,111px);
     grid-gap: 20px;
+}
+.skills__title {
+    padding: 30px 10px;
 }
 .skills-icon{
     background: $background-icon;
     padding: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    filter: grayscale(1);
+    transition: all .5s ease;
+    &:hover{
+        filter: grayscale(0);
+    }
+    h4{
+        background: $background-icon;
+    }
+    
 }
 .fab{
     font-size: 3.5em;
     width: 100%;
     text-align: center;
+    background: $background-icon;
+}
+.img-spring{
+    background: $background-icon;
+}
+.iconify{
+    font-size: 5em;
+    color: $white;
+    padding-bottom: 10px;
+    background: #68217A;
+    display: block;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+}
+.java-icon {
+    background: none;
+}
+.aboutme-size-icon{
+    font-size: 3em;
+}
+.background-icon{
+    background: $background-icon;
 }

@@ -1,10 +1,25 @@
 * {
   margin: 0px;
   padding: 0px;
+  background: #040402;
 }
 
+p {
+  font-family: "Jost", sans-serif;
+}
+
+main {
+  padding: 0px 20px;
+}
+
+/*
+angular
+vue
+.netcore
+springboot
+mysql
+*/
 .header {
-  background: #0B0D0E;
   color: #8841DC;
 }
 
@@ -22,14 +37,42 @@
   padding: 7px;
   color: #fff;
   background: #8841DC;
+  cursor: pointer;
 }
 
 .navbar__list {
-  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.navbar__list-item {
+  padding: 13px 0px;
+  background: #040402;
+}
+
+.navbar__list-item-link {
+  text-decoration: none;
+  color: #fff;
+  background: #040402;
+  font-size: 1.3em;
+  transition: all 0.3s ease;
+}
+.navbar__list-item-link:hover {
+  color: #8841DC;
+}
+
+.mostrar {
+  opacity: 1;
+  visibility: visible;
 }
 
 .presentation {
-  background: #131617;
   height: 100vh;
 }
 
@@ -93,11 +136,6 @@
   transform: translate(-50%, -50%);
 }
 
-.aboutme {
-  background: #0B0D0E;
-  padding: 20px;
-}
-
 .aboutme__img {
   width: 100%;
   height: 500px;
@@ -136,6 +174,11 @@
   font-size: 2.5em;
 }
 
+.aboutme__description {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2em;
+}
+
 .aboutme__btn {
   width: 120px;
   margin: 30px 0px;
@@ -149,29 +192,67 @@
 .skills-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 111px);
+  grid-template-rows: repeat(4, 111px);
   grid-gap: 20px;
+}
+
+.skills__title {
+  padding: 30px 10px;
 }
 
 .skills-icon {
   background: #191919;
   padding: 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+}
+.skills-icon:hover {
+  filter: grayscale(0);
+}
+.skills-icon h4 {
+  background: #191919;
 }
 
 .fab {
   font-size: 3.5em;
   width: 100%;
   text-align: center;
+  background: #191919;
+}
+
+.img-spring {
+  background: #191919;
+}
+
+.iconify {
+  font-size: 5em;
+  color: #fff;
+  padding-bottom: 10px;
+  background: #68217A;
+  display: block;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+}
+
+.java-icon {
+  background: none;
+}
+
+.aboutme-size-icon {
+  font-size: 3em;
+}
+
+.background-icon {
+  background: #191919;
 }
 
 .services {
   padding-bottom: 30px;
-  background: #131617;
-  text-align: center;
   padding-top: 20px;
 }
 
@@ -200,13 +281,32 @@
 .services__items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin: 0px 20px;
   grid-gap: 20px;
 }
 
 .services__item {
-  background: #040402;
+  background: #191919;
   padding: 20px;
+  border-bottom: 4px solid #191919;
+  transition: all 0.3s ease;
+  filter: grayscale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services__item:hover {
+  border-bottom: 4px solid #8841DC;
+  filter: grayscale(0);
+}
+.services__item:hover .fa-mobile-alt {
+  transition: all 0.3s ease;
+  color: #8841DC;
+}
+
+.service__item-icon {
+  font-size: 4em;
+  background: #191919;
 }
 
 .fa-mobile-alt {
@@ -215,20 +315,22 @@
 }
 
 .item__title {
-  margin-top: 24px;
+  margin-top: 10px;
   color: #fff;
   font-size: 1.3em;
+  background: #191919;
 }
 
 .item__txt {
   margin-top: 24px;
   color: #AFAFAF;
   font-size: 1.2em;
+  background: #191919;
+  text-align: center;
 }
 
 .portfolio {
   text-align: center;
-  background: #0B0D0E;
   color: #fff;
   padding-top: 20px;
 }
@@ -248,16 +350,16 @@
 }
 
 .portfolio__items {
-  transition: all 0.5s;
+  transition: all 0.3s;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  grid-gap: 20px;
 }
 
 .portfolio__item {
   position: relative;
   overflow: hidden;
-}
-
-.portfolio_img {
-  width: 100%;
 }
 
 .portfolio__shadow {
@@ -270,13 +372,13 @@
 }
 
 .portfolio__item:hover .portfolio__shadow {
-  transition: all 2s ease-out;
+  transition: all 0.3s ease-out;
   height: 100%;
 }
 
 .portfolio__item:hover img {
   transform: scale(1.2);
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .shadow__description {
@@ -292,6 +394,7 @@
 
 .portfolio_img2 {
   width: 100%;
+  height: 100%;
 }
 
 .portfolio__shadow2 {
@@ -309,7 +412,7 @@
   transform: all 0.6s;
   opacity: 0;
   backdrop-filter: blur(5px);
-  -webkit-transition: all 0.95s linear;
+  -webkit-transition: all 0.3s linear;
 }
 
 .portfolio__shadow2:hover {
@@ -318,7 +421,7 @@
 
 .portfolio__shadow2 > * {
   transform: translateY(100px);
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 
 .portfolio__shadow2:hover > * {
@@ -328,6 +431,96 @@
 .shadow__title2 {
   font-size: 1.25em;
   margin-top: 0.25em;
+}
+
+.contact {
+  color: #AFAFAF;
+  margin-top: 50px;
+}
+
+.contact__title {
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.contact__title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 200px;
+  background: #8841DC;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact__txt {
+  margin: 60px 0px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.contact__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 17px;
+}
+
+.contact__item {
+  text-align: center;
+  color: #AFAFAF;
+  background: #191919;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.contact__item:hover {
+  color: #fff;
+}
+
+.contact__item-description {
+  background: #191919;
+}
+
+.fa-linkedin-in {
+  font-size: 3.6em;
+}
+
+.fa-phone-alt {
+  font-size: 3em;
+  background: #191919;
+}
+
+.fa-github {
+  font-size: 3.6em;
+}
+
+.fa-paper-plane {
+  font-size: 3em;
+  background: #191919;
+}
+
+.fa-whatsapp {
+  font-size: 3.6em;
+}
+
+.fa-instagram {
+  font-size: 3.6em;
+}
+
+.contact__item-description {
+  font-size: 1em;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #AFAFAF;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

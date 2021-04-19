@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
    
@@ -17,8 +21,8 @@
         <h1 class="header__title">CodigCar</h1>
         
         <nav class="navbar">
-            <span class="navbar__icon"><i class="fas fa-bars"></i></span>
-           <ul class="navbar__list">
+            <span class="navbar__icon" id="btn-menu"><i class="fas fa-bars"></i></span>
+           <ul class="navbar__list" id="menu">
                <li class="navbar__list-item"><a class="navbar__list-item-link" href="#">Home</a></li>
                <li class="navbar__list-item"><a class="navbar__list-item-link" href="#">About</a></li>
                <li class="navbar__list-item"><a class="navbar__list-item-link" href="#">Skill</a></li>
@@ -29,13 +33,13 @@
         </nav>
       </div>
    </header>
-    
+
     <section class="presentation">
         <div class="presentation__content">
            <div class="presentation__txt">
-                <p class="presentation__hello">HOLA</p>
-                <h1 class="presentation__name">Soy Carlos un Desarrollador </h1>
-                <p class="presentation__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Providente, excepturi. Distinctio accusantium fugit odit? Fugit ipsam. Sed ac fringilla ex. Nam mauris velit, ac cursus quis, non leo.</p>
+                <p class="presentation__hello">Who am I?</p>
+                <h1 class="presentation__name">I'm Carlos Castilla, a simple developer</h1>
+                <p class="presentation__description">I'm a developer from Lima - Peru and I like to build quality and scalable software with the new technologies that emerge.</p>
                 <div class="presentation__btns">
                     <a class="btn-contratame btn" href="#">Contratame</a>
                     <a class="btn-cv btn" href="#">Portafolio</a>
@@ -48,52 +52,59 @@
         </div>
     </section>
     
+<main>
     <section class="aboutme">
         <div class="aboutme__title">About</div>
-        <div class="aboutme__info">
-            <p class="aboutme__question">¿QUIÉN SOY?</p>
-            <h1 class="aboutme__name">Soy Alexander Smith, diseñador visual de UI / UX y desarrollador web</h1>
-            <p class="aboutme__description">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper en tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias culpa!</p>
-            <a class="btn aboutme__btn" href="#">Descargar CV</a>
-        </div>
         <div class="aboutme__skills">
             <h1 class="skills__title">My skills</h1>
             <div class="skills-items">
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
+                   <span class="iconify aboutme-size-icon background-icon" data-icon="logos:nodejs" data-inline="false"></span>
+                    <h4>NODEJS</h4>
+                </div>
+                <div class="skills-icon">
+                   <span class="iconify aboutme-size-icon background-icon" data-icon="logos:spring-icon" data-inline="false"></span>
+                    <h4>SPRING BOOT</h4>
+                </div>
+                <div class="skills-icon">
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="cib:dot-net" data-inline="false" style="color: #68217A;"></span>
+                   <h4>.NETCORE</h4>
+                </div>
+                <div class="skills-icon">
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:react" data-inline="false"></span>
+                    <h4>REACT</h4>
+                </div>
+                <div class="skills-icon">
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:angular-icon" data-inline="false"></span>
+                    <h4>ANGULAR</h4>
+                </div>
+                <div class="skills-icon">
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:vue" data-inline="false"></span>
+                    <h4>VUE</h4>
+                </div>
+                <div class="skills-icon">
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="vscode-icons:file-type-html" data-inline="false"></span>
                     <h4>HTML</h4>
                 </div>
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="vscode-icons:file-type-css" data-inline="false"></span>
+                    <h4>CSS</h4>
                 </div>
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:javascript" data-inline="false"></span>
+                    <h4>JAVASCRIPT</h4>
                 </div>
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="vscode-icons:file-type-sql" data-inline="false"></span>
+                    <h4>SQL SERVER</h4>
                 </div>
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:mysql" data-inline="false"></span>
+                    <h4>MYSQL</h4>
                 </div>
                 <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
-                </div>
-                <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
-                </div>
-                <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
-                </div>
-                <div class="skills-icon">
-                    <i class="fab fa-react"></i>
-                    <h4>HTML</h4>
+                    <span class="iconify aboutme-size-icon background-icon" data-icon="logos:mongodb" data-inline="false"></span>
+                    <h4>MONGODB</h4>
                 </div>
                 
             </div>
@@ -105,33 +116,33 @@
         <p class="services__txt">Services I offer</p>
         <div class="services__items">
            <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
+                <span class="iconify service__item-icon" data-icon="mdi:responsive" data-inline="false" style="color: #8841DC;"></span>
                 <p class="item__title">Fully Responsive</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
             <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="item__title">Fully Responsive</p>
+                <span class=" iconify service__item-icon" data-icon="emojione-monotone:mobile-phone" data-inline="false" style="color: #8841DC;"></span>
+                <p class="item__title">Mobile Apps</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
             <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="item__title">Fully Responsive</p>
+               <span class="iconify service__item-icon" data-icon="whh:design" data-inline="false" style="color: #8841DC;"></span>
+                <p class="item__title">UI/UX Design</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
             <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="item__title">Fully Responsive</p>
+                <span class="iconify service__item-icon" data-icon="carbon:development" data-inline="false" style="color: #8841DC;"></span>
+                <p class="item__title">Backend development</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
             <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="item__title">Fully Responsive</p>
+                <span class="iconify service__item-icon" data-icon="ls:web" data-inline="false" style="color: #8841DC;"></span>
+                <p class="item__title">Web Development</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
             <div class="services__item">
-                <i class="fas fa-mobile-alt"></i>
-                <p class="item__title">Fully Responsive</p>
+                <span class="iconify service__item-icon" data-icon="file-icons:pcd" data-inline="false" style="color: #8841DC;"></span>
+                <p class="item__title">Scalable Systems</p>
                 <p class="item__txt">Your site will display properly on any device, including desktop computers, tablets and mobile phones.</p>
             </div>
         </div>
@@ -141,24 +152,72 @@
         <h1 class="portfolio__title">Portfolio</h1>
         <p class="services__txt">Showcasing some of my best work</p>
         <div class="portfolio__items">
-            <div class="portfolio__item">
-                <img class="portfolio_img" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1617164865/ilu8g2qtgofuxvu7tycn.jpg" alt="">
-                <div class="portfolio__shadow">
-                    <div class="shadow__description">
-                        <p class="shadow__title">ProjectApp</p>
-                        <p class="shadow__txt">React, Material UI, Chart.js, Rest API</p>
-                        <div class="shadow__buttons">
+            
+            <div class="portfolio__item2">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618439523/ihjvknxio2ksrlwnpzug.png" alt="">
+                <div class="portfolio__shadow2 image__overlay--primary">
+                        <p class="shadow__title2">GlassesPage</p>
+                        <p class="shadow__txt2">HTML,CSS,SASS,Javascript</p>
+                        <div class="shadow__buttons2">
+                            <a class="buttons-1" href="https://codigcar.github.io/Glasses-page/" target="_blank">Website</a>
+                            <a class="buttons-2" href="https://github.com/Codigcar/Glasses-page" target="_blank">Repositorie</a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__item2">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618445131/l1ibdtghyyq6f3tc2mnq.png" alt="">
+                <div class="portfolio__shadow2 image__overlay--primary">
+                        <p class="shadow__title2">HaciendaBahia</p>
+                        <p class="shadow__txt2">HTML,CSS,SASS,Javascript</p>
+                        <div class="shadow__buttons2">
+                            <a class="buttons-1" href=" https://codigcar.github.io/HaciendaBahiaPage/" target="_blank">Website</a>
+                            <a class="buttons-2" href="https://github.com/Codigcar/HaciendaBahiaPage" target="_blank">Repositorie</a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__item2">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618447286/k3z31huexfugolmk4e4d.png" alt="">
+                <div class="portfolio__shadow2 image__overlay--primary">
+                        <p class="shadow__title2">AIDRecommendation</p>
+                        <p class="shadow__txt2">React, Material UI, Chart.js, Rest API</p>
+                        <div class="shadow__buttons2">
                             <a class="buttons-1" href="#">Website</a>
                             <a class="buttons-2" href="#">Repositorie</a>
                         </div>
-                    </div>
                 </div>
             </div>
+            
             <div class="portfolio__item2">
-                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1617164865/ilu8g2qtgofuxvu7tycn.jpg" alt="">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618868823/zwdu7yywynbj2vdxz1g2.png" alt="">
                 <div class="portfolio__shadow2 image__overlay--primary">
-                        <p class="shadow__title2">ProjectApp</p>
-                        <p class="shadow__txt2">React, Material UI, Chart.js, Rest API</p>
+                        <p class="shadow__title2">PetCare</p>
+                        <p class="shadow__txt2">Flutter</p>
+                        <div class="shadow__buttons2">
+                            <a class="buttons-1" href="#">Website</a>
+                            <a class="buttons-2" href="#">Repositorie</a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__item2">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618650704/gt7rjb2cerdli7ynb6t5.png" alt="">
+                <div class="portfolio__shadow2 image__overlay--primary">
+                        <p class="shadow__title2">PetCare</p>
+                        <p class="shadow__txt2">Backend with Spring Boot</p>
+                        <div class="shadow__buttons2">
+                            <a class="buttons-1" href="#">Website</a>
+                            <a class="buttons-2" href="#">Repositorie</a>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__item2">
+                <img class="portfolio_img2" src="https://res.cloudinary.com/dggqauzyy/image/upload/v1618650866/uzclcjbxsvaz4smwwhsz.png" alt="">
+                <div class="portfolio__shadow2 image__overlay--primary">
+                        <p class="shadow__title2">PetCare</p>
+                        <p class="shadow__txt2">Backend with .NetCore 3</p>
                         <div class="shadow__buttons2">
                             <a class="buttons-1" href="#">Website</a>
                             <a class="buttons-2" href="#">Repositorie</a>
@@ -168,5 +227,48 @@
         </div>
 
     </section>
+    
+    <section class="contact">
+        <h1 class="contact__title">Contact</h1>
+        <p class="contact__txt">Always available for freelance work if the right project comes along. Freel free to contact me</p>
+        <div class="contact__items">
+            <div class="contact__item">
+               <i class="fab fa-linkedin-in"></i>
+               <p class="contact__item-description">Contact Me</p>
+            </div>
+            <div class="contact__item">
+               <i class="fab fa-github"></i>
+                <p class="contact__item-description">Follow me</p>
+            </div>
+            <div class="contact__item">
+                <i class="fas fa-phone-alt"></i>
+                <p class="contact__item-description">Phone Me</p>
+            </div>
+            <div class="contact__item">
+                <i class="fas fa-paper-plane"></i>
+                <p class="contact__item-description">Mail Me</p>
+            </div>
+            <div class="contact__item">
+                <i class="fab fa-whatsapp"></i>
+                <p class="contact__item-description">Text Me</p>
+            </div>
+            
+            <div class="contact__item">
+               <i class="fab fa-instagram"></i>
+                <p class="contact__item-description">Phone me</p>
+            </div>
+            
+           
+        </div>
+    </section>
+</main>
+   
+   
+    <footer class="footer">
+        <p>Copyright © 2021. @carloscastilla</p>
+        <p>All Rights Reserved</p>
+    </footer>
+    
+    <script src="js/navbar.js"></script>
 </body>
 </html>
