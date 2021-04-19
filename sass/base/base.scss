@@ -11,13 +11,16 @@ $background-primary: #040402;
     margin: 0px;
     padding: 0px;
     background: $background-primary;
-
+    box-sizing: border-box;
 }
 p {
     font-family: 'Jost', sans-serif;
 }
 main{
     padding: 0px 20px;
+}
+body {
+    margin: 0;
 }
 /*
 angular
