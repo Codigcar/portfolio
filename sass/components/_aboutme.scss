@@ -1,5 +1,6 @@
 .aboutme{
     //padding: 20px;
+    //background: red;
 }
 
 .aboutme__img{
@@ -49,17 +50,22 @@
 .aboutme__skills{
     color: $txt;
 }
-.skills-items{    display: grid;
+.skills-items{    
+    display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,111px);
-    grid-gap: 20px;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+}
+body {
+    background: red;
 }
 .skills__title {
     padding: 30px 10px;
 }
 .skills-icon{
+    font-size: 1em;
     background: $background-icon;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,20 +90,24 @@
     background: $background-icon;
 }
 .iconify{
-    font-size: 5em;
+    //font-size: 5em;
     color: $white;
     padding-bottom: 10px;
     background: #68217A;
     display: block;
-    height: 40px;
-    width: 100px;
+    // aqui width: 100px;
     text-align: center;
+}
+.skill-title{
+    padding: 3px 3px;
+    text-align: center;
+    //font-size: .5em;
 }
 .java-icon {
     background: none;
 }
 .aboutme-size-icon{
-    font-size: 3em;
+    font-size: 3.5em;
 }
 .background-icon{
     background: $background-icon;
