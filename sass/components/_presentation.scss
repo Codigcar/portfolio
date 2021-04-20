@@ -1,5 +1,7 @@
 .presentation{
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 }
 .presentation__content {
     color: $txt;
@@ -39,19 +41,18 @@
 .btn-cv{
     background: none;
     color: $purple;
-
 }
 
 .presentation__photo{
-    height: 50%;
+    //height: 50%;
 }
 .presentation__img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
 }
