@@ -97,6 +97,7 @@ mysql
 }
 
 .presentation {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -610,7 +611,7 @@ mysql
 }
 @media screen and (min-width: 1280px) {
   body {
-    max-width: 1208px;
+    max-width: 1400px;
     margin: auto;
   }
 
