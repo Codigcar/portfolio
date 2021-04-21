@@ -1,0 +1,110 @@
+@media screen and (min-width:770px) {
+    .skills-items{    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        // font-size: 1.4em;
+        grid-gap: 10px;
+    }
+    .services__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // font-size: 1.2em;
+        grid-gap: 20px;
+    }
+    .portfolio__items{
+        transition: all .3s;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 0.7fr);
+        grid-gap: 20px;
+    }
+    .contact__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 17px;
+    }
+    body {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:992px) {
+    .presentation{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .services__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .portfolio__items{
+        transition: all .3s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-gap: 20px;
+    }
+    .contact__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 17px;
+    }
+    .contact__item {
+        padding: 50px;
+        font-size: 1em;
+    }
+    body {
+        font-size: 22px;
+    }
+    .btn {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body {
+        max-width: 1208px;
+        margin: auto;
+    }
+    .navbar__icon{
+        display: none;
+    }
+    .header__container{
+        display: flex;
+    }
+    .navbar__list {
+        //display: none;
+        display: flex;
+        // margin-right: 40px;
+        position: relative;
+        top: 0px;
+        // left: 0;
+        // width: 100%;
+        // text-align: center;
+        opacity: 1;
+        visibility: visible;
+        // transition: all 0.5s;
+        list-style:none;
+    }
+    .navbar__list-item{
+        // padding: 13px 0px;
+        margin-right: 20px;
+        // background: red;
+    }
+   
+    .navbar__list-item-link{
+        /* text-decoration: none;
+        color: $white;
+        background: $background-primary;
+        font-size: 1.3em;
+        transition: all .3s ease;
+        &:hover{
+            color: $purple;
+        } */
+        font-size: 1.1em;
+        transition: all .3s ease;
+    }
+}

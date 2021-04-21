@@ -18,6 +18,10 @@ body {
   width: 100%;
 }
 
+section {
+  margin-bottom: 120px;
+}
+
 /*
 angular
 vue
@@ -76,6 +80,10 @@ mysql
 .mostrar {
   opacity: 1;
   visibility: visible;
+}
+
+.fa-bars {
+  background: none;
 }
 
 .presentation {
@@ -141,6 +149,10 @@ mysql
   transform: translate(-50%, -30%);
 }
 
+.aboutme {
+  margin-top: -100px;
+}
+
 .aboutme__img {
   width: 100%;
   height: 500px;
@@ -197,10 +209,6 @@ mysql
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-}
-
-body {
-  background: red;
 }
 
 .skills__title {
@@ -262,7 +270,6 @@ body {
 }
 
 .services {
-  padding-bottom: 30px;
   padding-top: 20px;
 }
 
@@ -363,39 +370,8 @@ body {
   transition: all 0.3s;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 300px);
+  grid-template-rows: repeat(6, 0.7fr);
   grid-gap: 20px;
-}
-
-.portfolio__item {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio__shadow {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 0;
-}
-
-.portfolio__item:hover .portfolio__shadow {
-  transition: all 0.3s ease-out;
-  height: 100%;
-}
-
-.portfolio__item:hover img {
-  transform: scale(1.2);
-  transition: all 0.3s ease-out;
-}
-
-.shadow__description {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .portfolio__item2 {
@@ -441,6 +417,23 @@ body {
 .shadow__title2 {
   font-size: 1.25em;
   margin-top: 0.25em;
+  background: none;
+}
+
+.shadow__txt2 {
+  background: none;
+}
+
+.shadow__buttons2 {
+  background: none;
+}
+
+.buttons-1 {
+  background: none;
+}
+
+.buttons-2 {
+  background: none;
 }
 
 .contact {
@@ -531,6 +524,119 @@ body {
   text-align: center;
   color: #AFAFAF;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 770px) {
+  .skills-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .services__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .portfolio__items {
+    transition: all 0.3s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.7fr);
+    grid-gap: 20px;
+  }
+
+  .contact__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 17px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .services__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .portfolio__items {
+    transition: all 0.3s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 20px;
+  }
+
+  .contact__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 17px;
+  }
+
+  .contact__item {
+    padding: 50px;
+    font-size: 1em;
+  }
+
+  body {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    max-width: 1208px;
+    margin: auto;
+  }
+
+  .navbar__icon {
+    display: none;
+  }
+
+  .header__container {
+    display: flex;
+  }
+
+  .navbar__list {
+    display: flex;
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    list-style: none;
+  }
+
+  .navbar__list-item {
+    margin-right: 20px;
+  }
+
+  .navbar__list-item-link {
+    /* text-decoration: none;
+    color: $white;
+    background: $background-primary;
+    font-size: 1.3em;
+    transition: all .3s ease;
+    &:hover{
+        color: $purple;
+    } */
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
