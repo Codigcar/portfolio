@@ -1,6 +1,13 @@
 
 .header {
     color: $purple;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 999;
+    max-width: 1208px;
+
 }
 .header__container{
     display: flex;

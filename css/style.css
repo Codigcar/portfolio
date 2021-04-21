@@ -22,6 +22,10 @@ section {
   margin-bottom: 120px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
 angular
 vue
@@ -31,6 +35,12 @@ mysql
 */
 .header {
   color: #8841DC;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 999;
+  max-width: 1208px;
 }
 
 .header__container {

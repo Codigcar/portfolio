@@ -2,13 +2,11 @@
     .skills-items{    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        // font-size: 1.4em;
         grid-gap: 10px;
     }
     .services__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        // font-size: 1.2em;
         grid-gap: 20px;
     }
     .portfolio__items{
