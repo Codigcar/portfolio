@@ -1,3 +1,3 @@
 # Portfolio
 
-deploy: https://codigcar.github.io/Portfolio/
+deploy: https://codigcar.github.io/portfolio/
