@@ -24,6 +24,11 @@
     body {
         font-size: 20px;
     }
+    // .btn-contratame{
+    // }
+   .btn{
+       width: 180px;
+   }
 }
 @media screen and (min-width:992px) {
     .presentation{
@@ -64,7 +69,7 @@
 
 @media screen and (min-width:1280px) {
     body {
-        max-width: 1400px;
+        max-width: 1208px;
         margin: auto;
     }
     .navbar__icon{

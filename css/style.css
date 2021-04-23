@@ -37,17 +37,19 @@ mysql
   color: #8841DC;
   position: fixed;
   top: 0;
-  width: 100%;
-  margin: auto;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
   z-index: 999;
-  max-width: 1208px;
+  border-bottom: 1px solid #8841DC;
 }
 
 .header__container {
+  max-width: 1208px;
+  margin: 0px auto;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
 
 .navbar__icon {
@@ -129,6 +131,7 @@ mysql
 .btn {
   color: #fff;
   text-decoration: none;
+  text-align: center;
   display: inline-block;
   border: 2px solid #8841DC;
   padding: 15px 26px;
@@ -567,6 +570,10 @@ mysql
   body {
     font-size: 20px;
   }
+
+  .btn {
+    width: 180px;
+  }
 }
 @media screen and (min-width: 992px) {
   .presentation {
@@ -611,7 +618,7 @@ mysql
 }
 @media screen and (min-width: 1280px) {
   body {
-    max-width: 1400px;
+    max-width: 1208px;
     margin: auto;
   }
 
