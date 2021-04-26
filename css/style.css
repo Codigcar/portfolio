@@ -93,6 +93,10 @@ mysql
   color: #8841DC;
 }
 
+.navbar__icon {
+  display: flex;
+}
+
 .mostrar {
   opacity: 1;
   visibility: visible;
