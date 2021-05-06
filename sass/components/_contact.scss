@@ -39,9 +39,12 @@
     align-items: center;
     
     cursor: pointer;
+    transition: all 0.5s;
     &:hover{
         color: $white;
     }
+    text-decoration: none;
+
 }
 .contact__item-description{
     background: $background-icon;
