@@ -448,15 +448,26 @@ mysql
 }
 
 .shadow__buttons2 {
+  margin-top: 20px;
   background: none;
 }
 
 .buttons-1 {
+  text-decoration: none;
   background: none;
+  padding: 10px;
+  background: #0B0D0E;
+  font-weight: bold;
+  color: red;
 }
 
 .buttons-2 {
+  text-decoration: none;
   background: none;
+  padding: 10px;
+  background: #0B0D0E;
+  font-weight: bold;
+  color: blue;
 }
 
 .contact {

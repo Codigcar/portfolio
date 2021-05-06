@@ -66,11 +66,22 @@
     background: none;
 }
 .shadow__buttons2{
+    margin-top: 20px;
     background: none;
 }
 .buttons-1{
+    text-decoration: none;
     background: none;
+    padding: 10px;
+    background: $background1;
+    font-weight: bold;
+    color: red;
 }
 .buttons-2{
+    text-decoration: none;
     background: none;
+    padding: 10px;
+    background: $background1;
+    font-weight: bold;
+    color: blue;
 }
