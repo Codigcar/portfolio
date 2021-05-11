@@ -31,20 +31,21 @@
     padding: 15px 26px;
     background: $purple;
     border-radius: 7px;
-    width: 90px;
     text-align: center;
-    font-size: 1.2em;
-    width: 150px;
 }
 .btn-contratame{
     margin-right: 10px;
+    font-size: 1em;
 }
 
 .btn-cv{
-    background: none;
-    color: $purple;
+    margin-right: 10px;
+    font-size: .8em;
 }
-
+.fa-id-card{
+    font-size: 1em;
+    background: none;
+}
 .presentation__photo{
     //height: 50%;
 }

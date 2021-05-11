@@ -13,12 +13,15 @@
 .header__container{
     max-width: 1208px;
     margin: 0px auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
 
     display: flex;
     justify-content: space-between;
 }
 
+.header__title{
+    font-size: 1.7em;
+}
 
 .navbar__icon{
     font-size: 1.3em;

@@ -52,9 +52,13 @@ mysql
 .header__container {
   max-width: 1208px;
   margin: 0px auto;
-  padding: 20px 0px;
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
+}
+
+.header__title {
+  font-size: 1.7em;
 }
 
 .navbar__icon {
@@ -82,6 +86,7 @@ mysql
 .navbar__list-item {
   padding: 13px 0px;
   background: #040402;
+  font-size: 0.9em;
 }
 
 .navbar__list-item-link {
@@ -146,19 +151,22 @@ mysql
   padding: 15px 26px;
   background: #8841DC;
   border-radius: 7px;
-  width: 90px;
   text-align: center;
-  font-size: 1.2em;
-  width: 150px;
 }
 
 .btn-contratame {
   margin-right: 10px;
+  font-size: 1em;
 }
 
 .btn-cv {
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.fa-id-card {
+  font-size: 1em;
   background: none;
-  color: #8841DC;
 }
 
 .presentation__img {
